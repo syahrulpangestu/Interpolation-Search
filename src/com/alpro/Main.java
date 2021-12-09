@@ -74,12 +74,15 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] array = new int[5];
+        Scanner scanner = new Scanner(System.in);
+        int size;
         int value;
         int index = 0;
-        Scanner scanner = new Scanner(System.in);
+        System.out.print("Jumlah array : ");
+        size = scanner.nextInt();
+        int[] array = new int[size];
         while (index < array.length) {
-            System.out.print("Msukan angka kedalam array : ");
+            System.out.print("Masukan angka kedalam array : ");
             array[index] = scanner.nextInt();
             index++;
         }
